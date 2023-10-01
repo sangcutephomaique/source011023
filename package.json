@@ -1,8 +1,8 @@
 {
   "name": "landing-page-reactjs-materialui",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://sangcutephomaique.github.io/source011023",
+  "homepage": "https://sangcutephomaique.github.io/source011023"
+  "private": true
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -21,7 +21,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
 	"predeploy": "npm run build",
-	"deploy": "gh-pages -d build",
+	"deploy": "gh-pages -d build"
   },
   "scripts": {
     "start": "react-scripts start",
